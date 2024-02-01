@@ -7,10 +7,9 @@
     <script type="module" src="./motion-carousel.js"></script>
 </head>
 <body>
-    <script type="module" src="./motion-carousel.js"></script>
 
     <h2>motion-carousel</h2>
-    <motion-carousel class="carousel">
+    <motion-carousel id="carousel">
       <img src="https://picsum.photos/seed/1/200">
       <img src="https://picsum.photos/seed/2/200">
       <img src="https://picsum.photos/seed/3/200">
@@ -27,13 +26,13 @@
         font-family: sans-serif;
       }
     
-      .carousel {
+      #carousel {
         width: 200px;
         height: 200px;
         user-select: none;
       }
     
-      .carousel:not(:defined) > * {
+      #arousel:not(:defined) > * {
         display: none;
       }
     </style>
